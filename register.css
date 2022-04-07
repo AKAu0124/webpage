@@ -1,0 +1,148 @@
+body{
+    background-color: darkgray;
+    font-family: 'Poppins' , sans-serif;
+    font-size:  14px;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.link,a, ul{
+    background: none;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Grape Nuts', cursive;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    gap: 1.25rem;
+}
+
+li{
+    display: inline-block;
+}
+
+.header, a, button{
+    color: lightgray;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+}
+
+
+
+/* Form Setting */
+
+h2{
+    margin-top: 15%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Grape Nuts', cursive;
+    color: #0c1b54;;
+}
+
+
+.firstName{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: .25rem;
+}
+
+.lastName{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: .25rem;
+}
+
+.gender{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: .25rem;
+}
+
+/* Gender Box*/
+
+.btn{
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: none;
+    display: flex;
+    height: 57.5px;
+    padding: .25rem;
+    position: relative;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 20.5px;
+}
+
+.address{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: .25rem;
+}
+
+.address.form-control{
+    border-radius: 100px;
+}
+
+.contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: .25rem;
+    gap: .25rem;
+}
+
+
+
+.button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+.button .btn-custom{
+    background-color: #0c1b54;
+    color: lightgray;
+    border-radius: 18px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*.navbar-custom{
+    background: rgba(130, 130, 130, 0.703);
+
+}
+
+.container{
+    margin-top: 15%;
+}
+
+.navbar-brand,.nav-link{
+    color: lightgray;
+}*/

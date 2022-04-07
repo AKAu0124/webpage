@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+li, a {
+    font-family: 'Grape Nuts', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links, li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links, li, a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links, li, a:hover{
+    color: gold;
+}
