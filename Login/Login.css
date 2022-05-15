@@ -1,55 +1,89 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
 
 body{
-    background-color: rgba(130, 130, 130, 0.703);
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size:  14px;
+    background-color: dodgerblue;
+}
+
+h1{
+    margin-top: 15px;
 }
 
 .login-container{
-    margin-top: 15px;
+    background-image: url('/src/bgpic.jpg');
     height: 100vh;
     width: 100%;
+
 }
 
 .login-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(118, 118, 118, 0.5);
+    border-radius: 8px;
+    border-color: #0c1b54;
+    box-shadow: 0 4px 30px rgba(255,255,255 ,0.2);
+    backdrop-filter: blur(5px);
     max-width: 100%;
-    width: 370px;
-    padding: 15x;
-    margin: auto;
+    width: 400px;
 }
 
 .form-floating{
     padding: 5px;
 }
 
-.form-control{
-    font-size: 15px;
-    min-height: 48px;
-    font-weight: 500;
-}
-
 .form-control:focus{
-    border-color: #437dd9;
+    border-color: #0c1b54;
     box-shadow: 0 0 0 0.2rem rgba(63, 109, 224, 0.25);
 }
 
-.forgot-link{
-    font-size: 13px;
-}
-
-.forgot-link label{
-    margin-bottom: 0;
-}
 
 .login-form a{
     text-decoration: none;
 }
 
-.btn-custom{
-    background: #437dd9;
-    background-color: #437dd9;
+.form-check{
+
+    padding-top: .5rem;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+
+.button{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+}
+
+.button .btn-custom{
+    background-color: #0c1b54;
     color: lightgray;
-    font-size: 15px;    
-    font-weight: 600;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+button.link{
+    background-color: transparent;
+    display: inline;
+    box-decoration-break: none;
+    text-decoration: none;
+    color: lightgray;
+    box-sizing: border-box;
+    border: none;
+}
+
+.select:focus{
+    color: white;
+    background-color: white;
+    border-color: #0c1b54;
+}
+
+.select{
+    color: white;
 }

@@ -4,6 +4,10 @@ body{
     background-color: darkgray;
     font-family: 'Poppins' , sans-serif;
     font-size:  14px;
+    background-image: url('/src/bgpic.jpg');
+    height: 100vh;
+    width: 100%;
+
 }
 
 
@@ -17,7 +21,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Karla', sans-serif;
 }
 
 .navbar-links ul{
@@ -106,7 +110,7 @@ h2{
     text-align: center;
     align-items: center;
     display: flex;
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Karla', sans-serif;
     color: #0c1b54;;
 }
 
@@ -147,7 +151,7 @@ h2{
     height: 57.5px;
     padding: .25rem;
     position: relative;
-    font-family: 'Beau Rivage', cursive;
+    font-family: 'Karla', sans-serif;
     font-size: 15px;
 }
 
@@ -206,16 +210,3 @@ h2{
     display: flex;
     padding-bottom: .75rem;
 }
-
-/*.navbar-custom{
-    background: rgba(130, 130, 130, 0.703);
-
-}
-
-.container{
-    margin-top: 15%;
-}
-
-.navbar-brand,.nav-link{
-    color: lightgray;
-}*/
