@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Grape+Nuts&display=swap');
 
 body{
-    background-color: darkgray;
     font-family: 'Poppins' , sans-serif;
     font-size:  14px;
     background-image: url('/src/bgpic.jpg');
-    height: 100vh;
-    width: 100%;
-
 }
-
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+
 }
 
-.navbar{
+/*.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +43,87 @@ body{
 
 .navbar-links li a:hover{
     color: #0c1b54;
+}*/
+
+
+h4 {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 180px;
+    font-size: 20px;
 }
+
+nav{
+    background: #0c1b54;
+    height: 30px;
+    position: fixed;
+    top : 0;
+    width: 100%;
+}
+
+nav, a{
+    text-align: right;
+    padding-right: 0.25rem;
+    font-weight: 200px;
+}
+
+.side-menu{
+    position: fixed;
+    background: #0c1b54;
+    width: 150px;
+    height: 100%;
+    display: inline-block;
+    font-weight: 300px;
+}
+
+.side-menu a{
+    color: white;
+    display: block;
+    text-align: justify;
+    font-weight: 300px;
+    background-color: #0c1b54;
+}
+
+.side-menu i{
+    padding: 0 10px;
+    text-align: left;
+    align-items: justify;
+}
+
+.side-menu, a:link{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300px;
+    text-indent: 0.25rem;
+    align-self: left;
+}
+
+.side-menu a:hover{
+    color: goldenrod;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+.side-menu i:nth-child(1){
+    border-left: 4px solid #fff;
+}
+
+.topbar, a{
+    color: white;
+    background-color: #0c1b54;
+}
+
+.topbar, a:hover{
+    background-color: black;
+    color: goldenrod;
+}
+
+.topbar,a:link{
+    text-decoration: none;
+}
+
 
 .dropdown{
     display: inline-block;
@@ -102,8 +179,48 @@ button.link{
 button:hover{
     color: #0c1b54;
 }
-/* Form Setting */
 
+.turnover{
+    display: inline-block;
+    top: 6.5rem;
+    margin-left: 370px;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    border-width: 1px;
+    box-shadow: 10px 5px 15px rgba(0,0,0,0.25);
+    color: #0c1b54;
+    text-indent: 0.5rem;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px); 
+}
+
+.totalEmployees{
+    display: inline-block;
+    top: 6.5rem;
+    margin-left: 25px;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    border-width: 1px;
+    box-shadow: 10px 5px 15px rgba(0,0,0,0.25);
+    color: #0c1b54;
+    text-indent: 0.5rem;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px); 
+}
+
+
+
+/*Register*/
+/* Form Setting */
+/*
 h2{
     margin-top: 5rem;
     justify-content: center;
@@ -137,7 +254,7 @@ h2{
     display: flex;
     padding-top: .25rem;
     padding-bottom: .5rem;
-}
+}*/
 
 /* Gender Box*/
 
