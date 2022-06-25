@@ -3,187 +3,127 @@
 body{
     font-family: 'Poppins' , sans-serif;
     font-size:  14px;
-    background-image: url('/src/bgpic.jpg');
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
-
 }
-
-/*.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Karla', sans-serif;
-}
-
-.navbar-links ul{
-    background: none;
-    border: none;
-    text-decoration: none;
-    display: flex;
-    gap: .5rem;
-    font-size: 20px;
-
-}
-
-.navbar-links li{
-    list-style: none;
-}
-
-.navbar-links li a{
-    text-decoration: none;
-    display: inline-flex;
-    color: lightgray;
-}
-
-.navbar-links li a:hover{
-    color: #0c1b54;
-}*/
 
 
 h4 {
     position: relative;
     display: inline-block;
     margin-top: 50px;
-    margin-left: 180px;
+    margin-left: 220px;
     font-size: 20px;
 }
 
-nav{
-    background: #0c1b54;
+.header{
+    background: #022658;
     height: 30px;
     position: fixed;
     top : 0;
     width: 100%;
 }
 
-nav, a{
+nav.header {
     text-align: right;
-    padding-right: 0.25rem;
-    font-weight: 200px;
-}
-
-.side-menu{
-    position: fixed;
-    background: #0c1b54;
-    width: 150px;
-    height: 100%;
-    display: inline-block;
-    font-weight: 300px;
-}
-
-.side-menu a{
-    color: white;
     display: block;
-    text-align: justify;
-    font-weight: 300px;
-    background-color: #0c1b54;
-}
-
-.side-menu i{
-    padding: 0 10px;
-    text-align: left;
-    align-items: justify;
-}
-
-.side-menu, a:link{
+    margin-right: 10%;
     text-decoration: none;
-    font-size: 15px;
-    font-weight: 300px;
-    text-indent: 0.25rem;
-    align-self: left;
-}
-
-.side-menu a:hover{
-    color: goldenrod;
-    background-color: black;
-    cursor: pointer;
-}
-
-
-.side-menu i:nth-child(1){
-    border-left: 4px solid #fff;
-}
-
-.topbar, a{
     color: white;
-    background-color: #0c1b54;
 }
 
-.topbar, a:hover{
-    background-color: black;
+.header .user{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.header .logout{
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.header .logout:hover{
     color: goldenrod;
+    background: #1e1e1e;
 }
 
-.topbar,a:link{
-    text-decoration: none;
+.sidebar{
+    position: fixed;
+    left: 0px;
+    width: 200px;
+    height: 100%;
+    background-color: #022658;
+    line-height: 50px;
 }
 
+.sidebar ul li{
+    border-bottom: 1px solid white;
+    text-align: left;
+    list-style-type: none;
+}
 
-.dropdown{
-    display: inline-block;
+.sidebar ul li a{
     position: relative;
+    color: white;
     text-decoration: none;
+    padding-left: 20px;
+    display: block;
+    width: 100%;
+    border-left: 3px solid transparent;
 }
 
-.dropdown-menu{
-    border: none;
-    position: absolute;
-    background-color: transparent;
-    color: lightgray;
-    font-size: 15px;
-    display: flex;
-    text-decoration: none;
-    box-sizing: border-box;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-10px);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+.sidebar ul li a:hover{
+    color: goldenrod;
+    background: #1e1e1e;
+    border-left-color: white;
 }
 
-.dropdown.active > .link, link:hover{
-    color: #0c1b54;
+.sidebar ul ul{
+    position: static;
+    display: none;
+}
+
+.sidebar ul .rpt-show.show{
+    display: block;
+}
+
+.sidebar ul .emp-show.show{
+    display: block;
+}
+
+.sidebar ul ul li{
+    line-height: 42px;
+    border-bottom: none;
+}
+
+.sidebar ul ul li a{
+    font-size: 12px;
 }
 
 
-.dropdown.active > .link + .dropdown-menu{
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
+.sidebar ul li a span{
+    position:absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
 }
 
-.link{
-    text-decoration: none;
-    color: lightgray;
-}
-
-.link:hover{
-    color: #0c1b54;
-}
-
-button.link{
-    background-color: transparent;
-    display: inline;
-    box-decoration-break: none;
-    text-decoration: none;
-    color: lightgray;
-    box-sizing: border-box;
-    border: none;
-}
-
-button:hover{
-    color: #0c1b54;
+.sidebar ul li a:hover span{
+    transform: translateY(-50%) rotate(-90deg);
 }
 
 .turnover{
     display: inline-block;
     top: 6.5rem;
-    margin-left: 370px;
+    margin-left: 420px;
     position: relative;
     width: 400px;
     height: 200px;
@@ -210,6 +150,45 @@ button:hover{
     box-shadow: 10px 5px 15px rgba(0,0,0,0.25);
     color: #0c1b54;
     text-indent: 0.5rem;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px); 
+}
+
+.companyNotice{
+    display: inline-block;
+    top: 7.5rem;
+    margin-left: 370px;
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    border-width: 1px;
+    box-shadow: 10px 5px 15px rgba(0,0,0,0.25);
+    color: #0c1b54;
+    text-indent: 0.5rem;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px); 
+}
+
+
+.table{
+    margin: 7.5rem 0 0 35%;
+    left: 180px;
+    width: 65%;
+    text-indent: 1rem;
+    text-align: center;
+    align-content: space-between;
+    overflow: auto;
+    display: inline-block;
+    position: absolute;
+    border-radius: 8px;
+    border-width: 1px;
+    box-shadow: 10px 5px 15px rgba(0,0,0,0.25);
+    color: #0c1b54;
     font-size: 20px;
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.25);
@@ -258,6 +237,8 @@ h2{
 
 /* Gender Box*/
 
+
+/*
 .btn{
     background-color: white;
     justify-content: center;
@@ -302,7 +283,7 @@ h2{
     color: lightgray;
     border-radius: 18px;
     box-sizing: border-box;
-}
+}*/
 
 
 /* Account */
